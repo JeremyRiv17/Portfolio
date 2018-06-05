@@ -1,0 +1,186 @@
+body{background-color:#1f1f1f;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+}
+#mainState{
+    background-image: linear-gradient(to top left,
+      rgba(0, 0, 0, .9) 25%,
+      rgba(0, 0, 0, .1) 50%,
+      rgba(0, 0, 0, .9) 75%);
+      animation: 4s linear 0s infinite alternate move_eye;
+    background-color: #0093A9; 
+    padding:100px; 
+    border-style: outset;
+    border-top-width: 5px;
+    animation: mainState 30s ease-in-out 0s;  
+}
+
+
+#bio{
+    background-image: linear-gradient(to top right,
+      rgba(0, 0, 0, .9) 25%,
+      rgba(0, 0, 0, .1) 50%,
+      rgba(0, 0, 0, .9) 75%);
+    background-color: #0093A9; 
+    padding:100px;
+    border-style: outset;
+    border-top-width: 5px; 
+    margin-left: 2%;
+    margin-bottom: 20px;
+    font-family: 'Muli', sans-serif;
+    animation: bio 30s ease-in-out 0s;
+    
+    
+    
+}
+.col-md-3{background-color: #ffffff; align-content: center;
+    padding:50px
+}
+header{background:white;
+    height:90px;
+    width:100%;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color:grey;
+}
+.name{background-color:#4aaaa5;
+    padding:30px;
+    color:#ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:30px;
+    margin-left:180px;
+    float: left;}
+
+.pagelinks{color:grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+    Margin-right:25px;
+    margin-top:50px;
+}
+h2 {font-family: 'Crimson Text', serif;
+    text-align: center;
+    font-size:120px;
+    color:white;
+    border-bottom: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: grey;
+}
+p{
+    font-size: 20px;
+    color:white;
+    font-family: 'Muli', sans-serif;
+}
+#face{height:150px;
+    width:200px;
+    margin-right:10px;
+    margin-bottom:5px;
+
+}
+#abstract1{padding:20px;}
+
+
+
+footer{
+    height:50px;
+    text-align:center;
+    font-size:20px;
+    padding:5px;
+    width:100%;
+    background: darkgrey;
+    color:black;
+    border-color: #4aaaa5;
+    border: solid;
+    border-top-width: 8px;
+    margin-top: -50px;
+}
+#canvas{
+    margin: 10px;
+    float: left;
+    position: relative;
+    text-align: center;
+    color: white;  
+}
+.centered {
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+}
+#portfolio{
+    margin-left: 75%;
+}
+#contact{
+    margin-left: 25%;
+}
+label{
+    color:white;
+}
+#hcontact{
+    text-align: center;
+}
+  
+.auth-image {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+  
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+    padding-top: 20px;
+  }
+  .footer,
+  .push {
+    height: 50px;
+}
+@media screen and (max-width: 960){
+    .col-md-5{ margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;}
+}
+@media screen and (max-width: 960){
+    .col-md-3{ margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+        background:black}
+}
+#spacer{
+    padding:20px
+}
+
+/* animations */
+@keyframes mainState {
+    0%   {opacity: 0; }
+    2%   {opacity: 1.0;}
+    0%{-webkit-filter: hue-rotate(0deg);}
+    0%{-webkit-filter: hue-rotate(360deg);}
+    0% {-webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;}
+    5% {-webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);}
+}
+
+@keyframes bio{
+    0%   {opacity: 0; }
+    4%   {opacity: 0; }
+    8%  {opacity: 1.0;}
+    0%{-webkit-filter: hue-rotate(0deg);}
+    0%{-webkit-filter: hue-rotate(360deg);}
+    4% {-webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;}
+    8% {-webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);}
+}
