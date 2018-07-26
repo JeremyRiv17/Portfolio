@@ -66,7 +66,19 @@ label{
 #center{
     align-self: left;
 }
+ .port-image{
+     height:200px;
+     width:200px;
+ }
+ .port-label{
+     color:white; 
+     text-align: center;
+    
+ }
 
+h4{
+    color:white;
+}
 
 @media screen and (max-width: 960){
     .col-md-5{ margin: auto;
